@@ -1,6 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import time  # Импортирование модуля времени
+
 print("Введите n-ое число Фибоначчи, которое требуется вычислить:")
 n = int(input())
+
 
 def fib_list(n):
     fib_numbers = [0]*100  # Пустой лист для записи чисел Фибоначчи
@@ -10,8 +15,9 @@ def fib_list(n):
     return fib_numbers[n]
 
 
-start = time.time()  # Начало отсчета
+# Начало отсчета
+start = time.time()
 print(n, "число Фибоначчи =", fib_list(n))
-end = time.time()  # Конец отсчета
-
+# Конец отсчета
+end = time.time()
 print("Время выполнения алгоритма:", (end - start), "сек.")

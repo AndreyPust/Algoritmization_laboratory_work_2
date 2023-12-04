@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
 # Импортирование модуля времени
 import time
+
 print("Введите n-ое число Фибоначчи, которое требуется вычислить:")
 n_fib = int(input())
 

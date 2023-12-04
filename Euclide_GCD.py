@@ -1,4 +1,9 @@
-import time  # Импортирование модуля времени
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# Импортирование модуля времени
+import time
+
 print("Введите число а:")
 number_a = int(input())
 print("Введите число b:")
@@ -16,8 +21,9 @@ def euclide_gcd(a, b):
         return euclide_gcd(a, b % a)
 
 
-start = time.time()  # Начало отсчета
+# Начало отсчета
+start = time.time()
 print("НОД чисел a и b =", euclide_gcd(number_a, number_b))
-end = time.time()  # Конец отсчета
-
+# Конец отсчета
+end = time.time()
 print("Время выполнения алгоритма:", (end - start), "сек.")
