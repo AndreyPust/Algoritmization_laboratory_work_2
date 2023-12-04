@@ -1,17 +1,23 @@
-import time  # Импортирование модуля времени
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
+# Импортирование модуля времени
+import time
 print("Введите n-ое число Фибоначчи, которое требуется вычислить:")
-n = int(input())
+n_fib = int(input())
 
 
-def fib_recursive(n):
-    if n <= 1:
-        return n
+def fib_recursive(n_fib):
+    if n_fib <= 1:
+        return n_fib
     else:
-        return fib_recursive(n - 1) + fib_recursive(n - 2)
+        return fib_recursive(n_fib - 1) + fib_recursive(n_fib - 2)
 
 
-start = time.time()  # Начало отсчета
-print(n, "число Фибоначчи =", fib_recursive(n))
-end = time.time()  # Конец отсчета
-
+# Начало отсчета
+start = time.time()
+print(n_fib, "число Фибоначчи =", fib_recursive(n_fib))
+# Конец отсчета
+end = time.time()
 print("Время выполнения алгоритма:", (end - start))
